@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Наргис Полякова](https://up.htmlacademy.ru/adaptive/13/user/130215).
-* Наставник: `Неизвестно`.
+* Наставник: Виктория Коваленко.
 
 ---
 
