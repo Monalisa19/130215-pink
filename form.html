@@ -29,26 +29,26 @@
     <div class="journey-with_pink">
       <div class="competition">Конкурс на самое безбашенное путешествие с Пинк</div>
     </div>
-  </nav>    
+  </nav>
 </header>
 <div class="travel-story">
   <div class="history-win">
     <p class="bonus-card">Поделитесь своей историей и получите шанс выиграть ценный приз—1000
-            миль на вашу бонусную карту!</p>
+      миль на вашу бонусную карту!</p>
   </div>
   <div class="card-traveler">
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div class="information">
-        <label for="field-surname">Фамилия:</label><br>
-        <input type="text" name="surname" id="field-surname" required value="Укажите фамилию *">
+        <label for="field-surname" class="user">Фамилия:</label>
+        <input type="text" name="surname" id="field-surname" class="user_input" placeholder="Укажите фамилию *">
       </div>
       <div class="information">
-        <label for="field-name">Имя:</label><br>
-        <input type="text" name="name" id="field-name" required value="Ведите ваше имя *">
+        <label for="field-name" class="user">Имя:</label>
+        <input type="text" name="name" id="field-name" class="user_input" placeholder="Ведите ваше имя *">
       </div>
       <div class="information">
-        <label for="field-patronymic">Отчество:</label><br>
-        <input type="text" name="patronymic" id="field-patronymic" value="Ну и отчество тоже">
+        <label for="field-patronymic" class="user">Отчество:</label>
+        <input type="text" name="patronymic" id="field-patronymic" class="user_input" placeholder="Ну и отчество тоже">
       </div>
   </div>
 </div>
@@ -57,52 +57,52 @@
     <p class="record">Ваши безбашенные достижения в путешествии</p>
   </div>
   <div class="subscribe-list">
-  <div class="action">
-    <input type="checkbox" name="subscribe" id="subscribe-field" checked>
-    <label for="subscribe-field_one">Сделал селфи с акулой</label>
-  </div>
-  <div class="action">
-    <input type="checkbox" name="subscribe" id="subscribe-field_one" checked>
-    <label for="subscribe-field">Обгорел на пляже</label>
-  </div>
-  <div class="action">
-    <input type="checkbox" name="subscribe" id="subscribe-field_two">
-    <label for="subscribe-field_two">Видел Чака Нориса</label>
-  </div>
-  <div class="action">
-    <input type="checkbox" name="subscribe" id="subscribe-field_three">
-    <label for="subscribe-field_three">Накупил сувениров</label>
-  </div>
-  <div class="action">
-    <input type="checkbox" name="subscribe" id="subscribe-field_four">
-    <label for="subscribe-field_four">Удержал башню</label><br>
-  </div>
-  <div class="action">
-    <input type="checkbox" name="subscribe" id="subscribe-field_five" checked>
-    <label for="subscribe-field_five">Разгромил отель</label>
-  </div>
+    <div class="action">
+      <input type="checkbox"  class="achievements" name="subscribe" id="subscribe-field" checked>
+      <label for="subscribe-field" class="my-achievements">Сделал селфи с акулой</label>
+    </div>
+    <div class="action">
+      <input type="checkbox"  class="achievements" name="subscribe" id="subscribe-field" checked>
+      <label for="subscribe-field" class="my-achievements">Обгорел на пляже</label>
+    </div>
+    <div class="action">
+      <input type="checkbox" class="achievements" name="subscribe" id="subscribe-field">
+      <label for="subscribe-field" class="my-achievements">Видел Чака Нориса</label>
+    </div>
+    <div class="action">
+      <input type="checkbox"  class="achievements" name="subscribe" id="subscribe-field">
+      <label for="subscribe-field" class="my-achievements">Накупил сувениров</label>
+    </div>
+    <div class="action">
+      <input type="checkbox"  class="achievements"name="subscribe" id="subscribe-field">
+      <label for="subscribe-field" class="my-achievements">Удержал башню</label>
+    </div>
+    <div class="action">
+      <input type="checkbox" class="achievements" name="subscribe" id="subscribe-field" checked>
+      <label for="subscribe-field" class="my-achievements">Разгромил отель</label>
+    </div>
   </div>
 </div>
 <div class="personal-data">
   <div class="setting">
-    <label for="tel">Номер телефона</label>
-    <input type="tel" name="tel" id="tel" value="Номер, пожалуйста">
+    <label for="tel" class="user">Номер телефона</label>
+    <input type="tel" class="user_input"  name="tel" id="tel" value="Номер, пожалуйста">
   </div>
   <div class="setting">
-    <label for="email">Адрес почты</label>
-    <input type="email" name="email" id="email" required value="Введите почту*">
+    <label for="email" class="user">Адрес почты</label>
+    <input type="email" class="user_input" name="email" id="email" placeholder="Введите почту*">
   </div>
 </div>
 <div class="device">
   <p class="device-traveler">С каким приложением путешествовали?</p>
-<div class="app-for">
-  <input type="radio" name="question-one" value="Pink для IOS" checked>
-  <label>Pink для IOS</label>
-</div>
-<div class="app-for">
-  <input type="radio" name="question-one" value="Pink на Android">
-  <label>Pink для Android</label>
-</div>
+  <div class="app-for">
+    <input type="radio" name="question-one" value="Pink для IOS" checked>
+    <label>Pink для IOS</label>
+  </div>
+  <div class="app-for">
+    <input type="radio" name="question-one" value="Pink на Android">
+    <label>Pink для Android</label>
+  </div>
   <div class="app-for">
     <input type="radio" name="question-one" value="Windows Phone">
     <label>Windows Phone</label>
@@ -120,28 +120,28 @@
 <div class="footer-page_element">
   <div class="field"><sup>*</sup>__ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</div>
 </div>
-    </form>
+</form>
 <footer class="footer-page_form">
   <div class="footer-page_logo">
-    <img src="#">
+    <img src="#" width="" height="" alt="">
   </div>
-    <div class="footer-icons">
-      <ul class="footer-page_social">
-        <li class="social-links__item">
-          <a class="social‐links__item‐link‐‐twitter"  >Twitter</a>
-        </li>
-        <li class="social‐links__item">
-          <a class="social‐links__item‐link‐‐facebook"  >Facebook</a>
-        </li>
-        <li class="social‐links__item">
-          <a class="social‐links__item‐link‐‐youtube"  >Youtube</a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-        <p class="page‐footer__copyright">Разработано:</p>
-        <a class="btn page‐footer__copyright‐link"  href="https://htmlacademy.ru"></a>
-    </div>
+  <div class="footer-icons">
+    <ul class="footer-page_social">
+      <li class="social-links__item">
+        <a class="social‐links__item‐link social‐links__item‐link‐‐twitter" href="">Twitter</a>
+      </li>
+      <li class="social‐links__item">
+        <a class="social‐links__item‐link social‐links__item‐link‐‐facebook" href="">Facebook</a>
+      </li>
+      <li class="social‐links__item">
+        <a class="social‐links__item‐link social‐links__item‐link‐‐youtube" href="">Youtube</a>
+      </li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <p class="page‐footer__copyright">Разработано:</p>
+    <a class="btn page‐footer__copyright‐link"  href="https://htmlacademy.ru"></a>
+  </div>
 </footer>
 </body>
 </html>
