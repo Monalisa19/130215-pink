@@ -3,10 +3,179 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
-  </body>
+<body>
+<header class="page-header">
+  <nav class="main-nav">
+    <div class="logo-top">
+      <a class="logo" href="index.html"></a>
+      <a class="menu-btn"></a>
+    </div>
+    <ul class="main-nav_list">
+      <li class="main-nav_item">
+        <a href="index.html" class="main-nav_link">главная</a>
+      </li>
+      <li class="main-nav_item">
+        <a href="photo.html" class="main-nav_link">фотографии</a>
+      </li>
+      <li class="main-nav_item">
+        <a href="form.html" class="main-nav_link">конкурс</a>
+      </li>
+      <li class="main-nav_item">
+        <a href="https://htmlacademy.ru" class="main-nav_link">html academy</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="downloads">
+  <div class="downloads__banner"></div>
+  <div class="download-app_icons">
+  <div class="look-life">
+    Взгляните на жизнь иначе!
+  </div>
+  <div class="button-download">
+    <a href="#">Скачать приложение</a>
+  </div>
+  <div class="button-download_app--icons">
+    <a href="#">apple</a>
+    <a href="#">android</a>
+    <a href="#">windows</a>
+    <p class="for-download">Доступно для IPhone, IPad, Android,Windows Phone, OS X, Windows 8</p>
+  </div>
+  </div>
+</section>
+<section class="good-news_list">
+  <div class="news-wrapper">
+    <div  class="news-list_question"> Устали от серости мегаполиса?</div>
+    <div class="news-list_answer">Нам есть, что вам предложить!</div>
+  </div>
+  <div class="good-news_item">
+    <h2 class="advantages">Поднимает настроение</h2>
+      <p class="advantages-comments">Приложение позволит вам победить осеннюю хандру и депрессию<br> буквально в
+            несколько кликов!</p>
+  </div>
+  <div class="good-news_item">
+    <h2 class="advantages">Меняет мир вокруг</h2>
+    <p class="advantages-comments">Сделайте снимок и украсьие его смайликом или текстовой подписью,<br>чтобы усилить
+            эффект</p>
+  </div>
+  <div class="good-news_item">
+    <h2 class="advantages">Заводит новых друзей</h2>
+    <p class="advantages-comments">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+  </div>  
+</section>
+<div class="reviews-author">
+  <div class="reviews-author_name">
+    <h3 class="reviews-author_name--title">
+            Николай Петров
+    </h3>
+    <p class="blockquote">
+            "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я
+            познакомился со свой будущей женой в комментариях к выложенной фотографии!"
+    </p>
+  </div>
+  <div class="switches">
+    <input type="radio" id="review-btn-1" name="toggle" checked>
+    <input type="radio" id="review-btn-2" name="toggle">
+    <input type="radio" id="review-btn-3" name="toggle">
+    <label for="btn-1">
+      <svg></svg>
+    </label>
+    <label for="btn-2">
+      <svg></svg>
+    </label>
+    <label for="btn-3">
+      <svg></svg>
+    </label>
+  </div>
+</div>
+<div class="price-standart_filter--hit">
+  <table class="price-standart_filter">
+    <thead>
+      <tr>
+        <td colspan="2" class="column1">
+          <div>стандарт</div>
+          <div>3,99 USD</div>
+        </td>
+      </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td class="column2">
+        <p>розовый фильтр</p>
+      </td>
+      <td>
+        <svg></svg>
+      </td>
+    </tr>
+    <tr>
+      <td class="column3">
+        <p>смайлики</p>
+      </td>
+      <td>
+        <svg></svg>
+      </td>
+    </tr>
+      <tr>
+        <td class="column4">
+          <p>комментарии</p>
+        </td>
+        <td>
+          <svg></svg>
+        </td>
+      </tr>
+  </tbody>
+  </table>
+</div>
+<div class="switch-elements">
+  <div class="switch">
+    <input type="radio" id="tarif-btn-1" name="toggle">
+    <input type="radio" id="tarif-btn-2" name="toggle" checked>
+    <input type="radio" id="tarif-btn-3" name="toggle">
+    <label for="btn-1">
+      <svg></svg>
+    </label>
+    <label for="btn-2">
+      <svg></svg>
+    </label>
+    <label for="btn-3">
+      <svg></svg>
+    </label>
+  </div>
+</div>
+<footer class="page-footer">
+  <div class="about-questions-us">
+    <h1>Остались вопросы?Свяжитесь с нами!</h1>
+  </div>
+    <section class="page‐footer_wrapper">
+      <div class="page‐footer_contacts">
+        <b class="referens-location_item">Звоните:</b>
+      <div class="call">
+        <a href="tel:+78125556666">
+          <span class="referens-location"> +7(812) 555‐66‐66</span>
+        </a>
+      </div>
+      </div>
+      <div class="page‐footer_contacts">
+        <b class="referens-location_item">Пишите:</b>
+          <div class="mail">
+            <a href="https://htmlacademy.ru">
+            <span class="referens-location">mail@htmlacademy.ru</span>
+            </a>
+          </div>
+      </div>
+      <div class="page‐footer_contacts">
+        <b class="referens-location_item">Приезжайте в гости:</b>
+        <span class="referens-location-map">ул.Большая Конюшенная, 19/8 </span>           
+      </div>
+      <div class="map-wrapper">
+        <div class="map-decoration"></div>
+        <div class="map"></div>
+        <div class="map-point"></div>
+      </div>
+      </div>
+    </section>
+</footer>
+</body>
 </html>

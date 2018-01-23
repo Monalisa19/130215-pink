@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Форма ввода</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header class="page-header">
+  <nav class="main-nav">
+    <div class="logo-top">
+      <a class="logo" href="index.html"></a>
+      <a class="menu-btn"></a>
+    </div>
+    <ul class="main-nav_list">
+      <li class="main-nav_item">
+        <a href="index.html" class="main-nav_link">Главная</a>
+      </li>
+      <li class="main-nav_item">
+        <a href="photo.html" class="main-nav_link">Фотографии</a>
+      </li>
+      <li class="main-nav_item">
+        <a href="form.html" class="main-nav_link">Конкурс</a>
+      </li>
+      <li class="main-nav_item">
+        <a href="https://htmlacademy.ru" class="main-nav_link">HTML ACADEMY</a>
+      </li>
+    </ul>
+    <div class="journey-with_pink">
+      <div class="competition">Конкурс на самое безбашенное путешествие с Пинк</div>
+    </div>
+  </nav>
+</header>
+<div class="travel-story">
+  <div class="history-win">
+    <p class="bonus-card">Поделитесь своей историей и получите шанс выиграть ценный приз—1000
+      миль на вашу бонусную карту!</p>
+  </div>
+  <div class="card-traveler">
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <div class="information">
+        <label for="field-surname" class="user">Фамилия:</label>
+        <input type="text" name="surname" id="field-surname" class="user_input" placeholder="Укажите фамилию *">
+      </div>
+      <div class="information">
+        <label for="field-name" class="user">Имя:</label>
+        <input type="text" name="name" id="field-name" class="user_input" placeholder="Ведите ваше имя *">
+      </div>
+      <div class="information">
+        <label for="field-patronymic" class="user">Отчество:</label>
+        <input type="text" name="patronymic" id="field-patronymic" class="user_input" placeholder="Ну и отчество тоже">
+      </div>
+      </form>
+  </div>
+</div>
+<div class="crazy-journey">
+  <div class="service-record">
+    <p class="record">Ваши безбашенные достижения в путешествии</p>
+  </div>
+  <div class="subscribe-list">
+    <div class="action">
+      <input type="checkbox" class="achievements" name="subscribe" id="subscribe-field_selfie" checked>
+      <label for="subscribe-field_selfie" class="my-achievements">Сделал селфи с акулой</label>
+    </div>
+    <div class="action">
+      <input type="checkbox" class="achievements" name="subscribe" id="subscribe-field_beach" checked>
+      <label for="subscribe-field_beach" class="my-achievements">Обгорел на пляже</label>
+    </div>
+    <div class="action">
+      <input type="checkbox" class="achievements" name="subscribe" id="subscribe-field_celebrity">
+      <label for="subscribe-field_celebrity" class="my-achievements">Видел Чака Нориса</label>
+    </div>
+    <div class="action">
+      <input type="checkbox" class="achievements" name="subscribe" id="subscribe-field_souvenirs">
+      <label for="subscribe-field_souvenirs" class="my-achievements">Накупил сувениров</label>
+    </div>
+    <div class="action">
+      <input type="checkbox" class="achievements" name="subscribe" id="subscribe-field_tower">
+      <label for="subscribe-field_tower" class="my-achievements">Удержал башню</label>
+    </div>
+    <div class="action">
+      <input type="checkbox" class="achievements" name="subscribe" id="subscribe-field_hotel" checked>
+      <label for="subscribe-field_hotel" class="my-achievements">Разгромил отель</label>
+    </div>
+  </div>
+</div>
+<div class="personal-data">
+  <div class="setting">
+    <label for="tel" class="user">Номер телефона</label>
+    <input type="tel" class="user_input" name="tel" id="tel" placeholder="Номер, пожалуйста">
+  </div>
+  <div class="setting">
+    <label for="email" class="user">Адрес почты</label>
+    <input type="email" class="user_input" name="email" id="email" placeholder="Введите почту*">
+  </div>
+</div>
+<div class="device">
+  <p class="device-traveler">С каким приложением путешествовали?</p>
+  <div class="app-for">
+    <input type="radio" name="question-one" value="Pink для IOS" checked>
+    <label>Pink для IOS</label>
+  </div>
+  <div class="app-for">
+    <input type="radio" name="question-one" value="Pink на Android">
+    <label>Pink для Android</label>
+  </div>
+  <div class="app-for">
+    <input type="radio" name="question-one" value="Windows Phone">
+    <label>Windows Phone</label>
+  </div>
+</div>
+<div class="post">
+  <div class="featured-post">Опишите свои эмоции</div>
+  <div class="comment">
+    <textarea name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+  </div>
+  <div class="submint-send">
+    <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
+  </div>
+</div>
+<div class="footer-page_element">
+  <div class="field"><sup>*</sup>__ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</div>
+</div>
+<footer class="footer-page_form">
+  <div class="footer-page_logo">
+    <img src="#" class="footer-page_logo footer-page_logo-img" alt="логотип Пинк">
+  </div>
+  <div class="footer-icons">
+    <ul class="footer-page_social">
+      <li class="social-links__item">
+        <a href="#" class="social‐links__item‐link social‐links__item‐link‐‐twitter">Twitter</a>
+      </li>
+      <li class="social‐links__item">
+        <a href="#" class="social‐links__item‐link social‐links__item‐link‐‐facebook">Facebook</a>
+      </li>
+      <li class="social‐links__item">
+        <a href="#" class="social‐links__item‐link social‐links__item‐link‐‐youtube">Youtube</a>
+      </li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <p class="page‐footer__copyright">Разработано:</p>
+    <a href="https://htmlacademy.ru" class="btn page‐footer__copyright‐link">htmlacademy.ru</a>
+  </div>
+</footer>
+</body>
+</html>
