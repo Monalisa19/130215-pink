@@ -5,6 +5,7 @@
   background: @background;
   text-align: center;
   margin: 0;
+
   .advantages {
     margin: 0;
     margin-bottom: 20px;
@@ -15,6 +16,20 @@
     margin: 0;
     padding-bottom: 20px;
     font-size: @FontSizeadvantagescomments;
+  }
+}
+.good-news_list{
+  color: @secondFontColor;
+  font-size:@FontSizeadvantagescomments;
+  text-align:center;
+  &:after{
+    display:block;
+    content: " ";
+    background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
+    margin-left: 80px;
+    padding-top: 283px;
+
+
   }
 }
 
@@ -36,6 +51,5 @@
     font-size: @FontSizenewslist;
     font-weight: 100;
     margin-bottom: 40px;
-
   }
 }

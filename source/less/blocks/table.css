@@ -1,0 +1,9 @@
+.price-standard price-standard_filter--hit {
+  display: table;
+}
+.price-standard_filter {
+  display: table-caption;
+}
+.price-standard_filter td {
+  border: 1px solid black;
+}
