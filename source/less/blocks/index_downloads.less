@@ -4,7 +4,7 @@
   height: 460px;
   .download-app_icons {
     height: 270px;
-    background-color: #1D2631;
+  //  background-color: #1D2631;
   }
   .download-app_icons {
     width: 320px;
@@ -30,18 +30,34 @@
     color: @fontColor;
     font-size: @secondFontSize;
     text-decoration: none;
-
   }
 }
+  .button-download_app--icons {
+    text-align: center;
+    width: 300px;
+    margin-left: 0;
+  }
 
-.button-download_app--icons {
-  text-align: center;
-  width: 300px;
-  margin-left: 0;
-}
+  .for-download {
+    color: @fontColor;
+    font-size: @FontSizeadvantagescomments;
+    text-align: center;
+  }
 
-.for-download {
-  color: @fontColor;
-  font-size: @FontSizeadvantagescomments;
-  text-align: center;
-}
+  @media (min-width: 660px) {
+    .downloads {
+      background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+      width: 680px;
+      background-size: cover;
+    }
+
+    .download-app_icons {
+      background: none;
+    }
+
+    .look-life {
+      display: block;
+      font-size: 24px;
+      color: @fontColor;
+    }
+  }

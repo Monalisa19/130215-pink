@@ -5,38 +5,38 @@
   background: @background;
   text-align: center;
   margin: 0;
-
-  .advantages {
-    margin: 0;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    font-weight: bold;
-  }
-  .advantages-comments {
-    margin: 0;
-    padding-bottom: 20px;
-    font-size: @FontSizeadvantagescomments;
-  }
 }
-.good-news_list{
+
+.advantages {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.advantages-comments {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: @FontSizeadvantagescomments;
+}
+
+.good-news_list {
   color: @secondFontColor;
-  font-size:@FontSizeadvantagescomments;
-  text-align:center;
-  &:after{
-    display:block;
+  font-size: @FontSizeadvantagescomments;
+  text-align: center;
+  &:after {
+    display: block;
     content: " ";
     background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
     margin-left: 80px;
     padding-top: 283px;
-
-
   }
 }
 
 .news-wrapper {
   width: 320px;
   text-align: center;
-  color: #secondFontColor;
+  color: @secondFontColor;
   padding: 0;
   .news-list_question {
     margin-top: 50px;
@@ -50,6 +50,54 @@
     color: @fontColornewslist;
     font-size: @FontSizenewslist;
     font-weight: 100;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 660px) {
+  .news-wrapper {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-list_question {
+    font-size: 24px;
+  }
+
+  .news-list_answer {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .good-news_item {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages {
+    width: 300px;
+    margin-left: 270px;
+  }
+
+  .advantages-comments {
+    padding: 15px 5% 40px 50%;
+    text-align: left;
+  }
+
+  .good-news_list {
+    height: 787px;
+    &:after {
+      display: block;
+      content: " ";
+      background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
+      background-size: 275px auto;
+      height: 478px;
+      position: relative;
+      bottom: 561px;
+      left: -64px;
+    }
   }
 }

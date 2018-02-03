@@ -1,11 +1,90 @@
-.price-standard price-standard_filter--hit {
-  display: table;
-
+.price-standart_filter {
+  width: 320px;
 }
-.price-standard_filter{
-  display: table-caption;
-  td{
-    border: 1px solid black;
+.price_header {
+  width: 320px;
+  text-transform: uppercase;
+  background-color: rgb(40, 54, 69);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  &:before{
+    content: "ХИТ";
+    background: url(../img/bg-hit.svg) no-repeat;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    left: -8px;
+    transform: rotate(-43deg);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(210, 40, 86);
+    color: rgb(255, 255, 255);
   }
 }
 
+.price_title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.price_coast {
+  margin: 0;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+.price_content-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.price_item--hit {
+  width: 320px;
+  position: relative;
+  text-align: left;
+  font-size: 14px;
+  text-transform: uppercase;
+  min-height: 60px;
+  line-height: 60px;
+  color: rgb(40, 54, 69);
+  padding: 0px 20px;
+  border-top: 2px solid rgb(229, 229, 229);
+  background: url(../img/icon-yes.svg) 93% 50% no-repeat;
+}
+
+.price_options {
+  display: none;
+}
+
+.slider_price-item {
+  display: none;
+}
+.price_content-item--not-included {
+  background: url(../img/icon-no.svg) 93% 50% no-repeat;
+}
+
+.price__content-item:first-child {
+  border-top: none;
+}
+
+.switch-elements {
+  width: 320px;
+  height: 100px;
+  background: @borderColor;
+}
+
+.switch {
+  padding: 36px 121px 0;
+  width: 77px;
+  height: 25px;
+}
+
+@media (min-width: 660px) {
+
+}

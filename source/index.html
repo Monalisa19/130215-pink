@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -65,14 +66,23 @@
     <p class="advantages-comments">Ставьте лайки,комментируйте,делитесь фотографиями с друзьями и заводите новых</p>
   </div>
 </section>
+<section class="research">
+  <div class="research_text">
+    <div class="research__header">Эффект на&nbsp;24&nbsp;часа!</div>
+    <p class="research__description">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от
+      использования приложения длится&nbsp;целые&nbsp;сутки!</p>
+    <a class="research__link">Узнать больше об исследовании</a>
+  </div>
+</section>
 <div class="reviews-author">
   <div class="reviews-author_name">
     <h3 class="reviews-author_name--title">
       Николай Петров
     </h3>
+    <p class="reviews_description">25 лет,водитель трамвая</p>
     <p class="blockquote">
       "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я
-      познакомился со свой будущей женой в комментариях к выложенной фотографии!"
+      познакомился со своей будущей женой в комментариях к выложенной фотографии!"
     </p>
   </div>
   <div class="switches">
@@ -90,44 +100,50 @@
     </label>
   </div>
 </div>
-<div class="price-standart_filter--hit">
-  <table class="price-standart_filter">
-    <thead>
-    <tr>
-      <td colspan="2" class="column1">
-        <div>стандарт</div>
-        <div>3,99 USD</div>
-      </td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td class="column2">
-        <p>розовый фильтр</p>
-      </td>
-      <td>
-        <svg></svg>
-      </td>
-    </tr>
-    <tr>
-      <td class="column3">
-        <p>смайлики</p>
-      </td>
-      <td>
-        <svg></svg>
-      </td>
-    </tr>
-    <tr>
-      <td class="column4">
-        <p>комментарии</p>
-      </td>
-      <td>
-        <svg></svg>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-</div>
+<section class="price slider">
+<div class="price_price-table slider_price-wrap">
+  <div class="price_item price_options">
+    <ul class="price_content-list">
+      <li class="price_content-item price_options-item">Розовый фильтр</li>
+      <li class="price_content-item price_options-item">Смайлики</li>
+      <li class="price_content-item price_options-item">Комментарии</li>
+    </ul>
+  </div>
+  <div class="price_item slider_price-item">
+    <div class="price_header">
+      <p class="price_title">База</p>
+      <p class="price_cost">1,99 USD</p>
+    </div>
+    <ul class="price_content-list">
+      <li class="price_content-item">Розовый фильтр</li>
+      <li class="price_content-item price_content-item--not-included">Смайлики</li>
+      <li class="price_content-item price_content-item--not-included">Комментарии</li>
+    </ul>
+  </div>
+  <div class="price_item price_item--hit slider_price-item slider_price-item--active">
+    <div class="price_header">
+      <p class="price_title">Стандарт</p>
+      <p class="price_cost">3,99 USD</p>
+    </div>
+    <ul class="price_content-list">
+      <li class="price_content-item">Розовый фильтр</li>
+      <li class="price_content-item">Смайлики</li>
+      <li class="price_content-item price_content-item--not-included">Комментарии</li>
+    </ul>
+  </div>
+  <div class="price_item slider_price-item">
+    <div class="price_header">
+      <p class="price_title">Анлим</p>
+      <p class="price_cost">9,99 USD</p>
+    </div>
+    <ul class="price_content-list">
+      <li class="price_content-item">Розовый фильтр</li>
+      <li class="price_content-item">Смайлики</li>
+      <li class="price_content-item">Комментарии</li>
+    </ul>
+  </div>
+  </div>
+</section>
 <div class="switch-elements">
   <div class="switch">
     <input type="radio" id="tarif-btn-1" name="toggle">
@@ -153,7 +169,7 @@
       <b class="referens-location_item">Звоните:</b>
       <div class="call">
         <a href="tel:+78125556666">
-          <span class="referens-location"> +7(812) 555‐66‐66</span>
+          <a class="referens-location"> +7(812) 555‐66‐66</a>
         </a>
       </div>
     </div>
@@ -161,13 +177,13 @@
       <b class="referens-location_item">Пишите:</b>
       <div class="mail">
         <a href="https://htmlacademy.ru">
-          <span class="referens-location">mail@htmlacademy.ru</span>
+          <a class="referens-location">mail@htmlacademy.ru</a>
         </a>
       </div>
     </div>
     <div class="page‐footer_contacts">
       <b class="referens-location_item">Приезжайте в гости:</b>
-      <a class="referens-location-map">ул.Большая Конюшенная, 19/8 </a>
+      <p class="referens-location-map">ул.Большая Конюшенная, 19/8 </p>
     </div>
     <div class="map-wrapper">
       <div class="map-decoration"></div>
