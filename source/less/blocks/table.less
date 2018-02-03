@@ -44,33 +44,36 @@
   list-style: none;
 }
 
-.price_item--hit {
+.price_item slider_price-item--active {
   width: 320px;
-  position: relative;
   text-align: left;
-  font-size: 14px;
+  font-size: @FontSizeadvantagescomments;
   text-transform: uppercase;
   min-height: 60px;
   line-height: 60px;
   color: rgb(40, 54, 69);
   padding: 0px 20px;
   border-top: 2px solid rgb(229, 229, 229);
+
+}
+.price_content-item{
+  width: 320px;
+  padding: 0 20px;
+  text-align: left;
+  font-size: @FontSizeadvantagescomments;
+  text-transform: uppercase;
+  min-height: 60px;
+  line-height: 60px;
+  border-top: 2px solid @borderColor;
+  color: @fontColornewslist;
   background: url(../img/icon-yes.svg) 93% 50% no-repeat;
-}
-
-.price_options {
-  display: none;
-}
-
-.slider_price-item {
-  display: none;
 }
 .price_content-item--not-included {
   background: url(../img/icon-no.svg) 93% 50% no-repeat;
 }
 
-.price__content-item:first-child {
-  border-top: none;
+.price_content-item:first-child {
+ border-top: none;
 }
 
 .switch-elements {
