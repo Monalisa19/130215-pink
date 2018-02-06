@@ -85,22 +85,17 @@
       познакомился со своей будущей женой в комментариях к выложенной фотографии!"
     </p>
   </div>
-  <div class="switches">
-    <input type="radio" id="review-btn-1" name="toggle" checked>
-    <input type="radio" id="review-btn-2" name="toggle">
-    <input type="radio" id="review-btn-3" name="toggle">
-    <label for="btn-1">
-      <svg></svg>
-    </label>
-    <label for="btn-2">
-      <svg></svg>
-    </label>
-    <label for="btn-3">
-      <svg></svg>
-    </label>
+  <div class="slider">
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
   </div>
-</div>
-<section class="price slider">
+<section class="price-slider">
 <div class="price_price-table slider_price-wrap">
   <div class="price_item price_options">
     <ul class="price_content-list">
@@ -144,23 +139,17 @@
   </div>
   </div>
 </section>
-<div class="switch-elements">
-  <div class="switch">
-    <input type="radio" id="tarif-btn-1" name="toggle">
-    <input type="radio" id="tarif-btn-2" name="toggle" checked>
-    <input type="radio" id="tarif-btn-3" name="toggle">
-    <label for="btn-1">
-      <svg></svg>
-    </label>
-    <label for="btn-2">
-      <svg></svg>
-    </label>
-    <label for="btn-3">
-      <svg></svg>
-    </label>
+  <div class="slider">
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
   </div>
-</div>
-<footer class="page-footer">
+  <footer class="page-footer">
   <div class="about-questions-us">
     <h1>Остались вопросы?Свяжитесь с нами!</h1>
   </div>
@@ -185,12 +174,14 @@
       <b class="referens-location_item">Приезжайте в гости:</b>
       <p class="referens-location-map">ул.Большая Конюшенная, 19/8 </p>
     </div>
-    <div class="map-wrapper">
-      <div class="map-decoration"></div>
-      <div class="map"></div>
-      <div class="map-point"></div>
-    </div>
-    </div>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Интерактивная карта</h2>
+      <iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.320894615892275!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516539714703"
+        style="border:0" allowfullscreen>
+      </iframe>
+      <div class="map-marker"></div>
+    </section>
   </section>
 </footer>
 </body>
