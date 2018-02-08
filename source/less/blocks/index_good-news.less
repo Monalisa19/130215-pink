@@ -40,7 +40,6 @@
   padding: 0;
   .news-list_question {
     margin-top: 50px;
-    margin-bottom: 40px;
     color: @fontColornewslist;
     font-size: @FontSizenewslist;
     font-weight: 100;
@@ -101,3 +100,43 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .page-header {
+    width: 1200px;
+    height: 850px;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .good-news_item {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .advantages-comments {
+    width: 240px;
+    padding-left: 50px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @fontColornewslist;
+  }
+
+  .advantages {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 0;
+  }
+
+  .news-wrapper,
+  .news-list_question {
+    display: flex;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 auto;
+  }
+}
+

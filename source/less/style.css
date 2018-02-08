@@ -198,7 +198,6 @@ h2 {
 }
 .news-wrapper .news-list_question {
   margin-top: 50px;
-  margin-bottom: 40px;
   color: #283645;
   font-size: 24px;
   font-weight: 100;
@@ -249,6 +248,40 @@ h2 {
     position: relative;
     bottom: 561px;
     left: -64px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header {
+    width: 1200px;
+    height: 850px;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+    background-size: cover;
+  }
+  .good-news_item {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .advantages-comments {
+    width: 240px;
+    padding-left: 50px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+  }
+  .advantages {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 0;
+  }
+  .news-wrapper,
+  .news-list_question {
+    display: flex;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 auto;
   }
 }
 .reviews-author {
@@ -309,6 +342,36 @@ h2 {
     padding: 0 85px;
     text-align: center;
     font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews-author,
+  .reviews-author_name {
+    width: 1200px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blockquote {
+    max-width: 690px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    order: -2;
+  }
+  .reviews_description {
+    display: flex;
+    align-items: center;
+    order: 1;
+  }
+  .reviews-author_name--title {
+    display: flex;
+    align-items: center;
+    order: -1;
   }
 }
 .page‐footer_contacts {
@@ -385,6 +448,31 @@ h2 {
   .modal {
     width: 660px;
     height: 380px;
+    background-image: url(../img/bg-map-mobile@1x.png) no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .page‐footer_wrapper {
+    width: 1200px;
+    display: flex;
+  }
+  .about-questions-us {
+    margin: 0 auto;
+    padding-top: 65px;
+  }
+  .contacts_header {
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .page‐footer_contacts {
+    display: flex;
+    flex-direction: row;
+  }
+  .modal {
+    height: 525;
+    width: 1200px;
     background-image: url(../img/bg-map-mobile@1x.png) no-repeat;
     background-size: cover;
   }
@@ -695,6 +783,16 @@ textarea {
     font-size: 14px;
     text-decoration: underline;
     color: #d22856;
+  }
+}
+@media (min-width: 1200px) {
+  .research {
+    width: 1200px;
+    background: #f2f2f2;
+    display: block;
+    padding: 95px 40px 55px 30%;
+    background-image: url(../img/icon-editor-diagram-fill.svg) 20px no-repeat;
+    background-size: 250px auto;
   }
 }
 .slider {

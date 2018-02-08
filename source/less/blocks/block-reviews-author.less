@@ -63,3 +63,34 @@
     font-size: 14px
   }
 }
+
+@media (min-width: 1200px) {
+  .reviews-author,
+  .reviews-author_name{
+    width: 1200px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blockquote {
+    max-width: 690px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    order:-2;
+  }
+  .reviews_description {
+    display: flex;
+    align-items: center;
+    order:1;
+  }
+  .reviews-author_name--title {
+    display: flex;
+    align-items: center;
+    order:-1;
+  }
+}
