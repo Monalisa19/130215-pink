@@ -1,32 +1,92 @@
-.slider {
+.price__table {
   position: relative;
-  width: 320px;
-  height: 60px;
-  text-align: center;
-}
-.slider-controls label {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin: 0 3px;
-  background: white;
-  border: 3px solid white;
-  vertical-align: top;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.slider-controls {
-  position: absolute;
-  bottom: 95px;
   left: 50%;
-  width: 200px;
-  height: 10px;
-  margin-left: -100px;
-  text-align: center;
-  z-index: 1000;
+  transform: translateX(-50%);
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #e5e5e5;
 }
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background: #c1c1c1;
+.price__package {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.price__name {
+  position: relative;
+  min-width: 275px;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  text-align: center;
+  border: 2px solid #e5e5e5;
+  background-color: #283645;
+  background-clip: padding-box;
+}
+.price__total {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+}
+.price__option {
+  padding: 15px 0 14px 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 92.9% center;
+}
+.price__controls {
+  margin-top: 32px;
+  text-align: center;
+  display: none;
+}
+@media screen and (min-width: 320px) {
+  .price__controls {
+    display: block;
+  }
+  .price__table {
+    position: relative;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #e5e5e5;
+  }
+  /*  .price__option--yes,
+  .price__name--anlim {
+    display: none;
+  }
+*/
+  .price__name--baze {
+    display: none;
+  }
+  .price__option--yes,
+  .price__option--no {
+    width: 320px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 660px) {
+  .price__table {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #e5e5e5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price__table {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #e5e5e5;
+  }
 }

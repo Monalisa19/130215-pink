@@ -55,6 +55,8 @@
 
 @media (min-width: 660px) {
   .news-wrapper {
+    position: relative;
+    left: 10px;
     width: 660px;
     display: flex;
     flex-direction: column;
@@ -87,15 +89,15 @@
   }
 
   .good-news_list {
-    height: 787px;
     &:after {
       display: block;
       content: " ";
       background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
       background-size: 275px auto;
+      width: 660px;
       height: 478px;
-      position: relative;
-      bottom: 561px;
+      position: absolute;
+      top: 992px;
       left: -64px;
     }
   }
@@ -108,12 +110,26 @@
     background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
     background-size: cover;
   }
-
-  .good-news_item {
+  .news-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    background: white;
+  }
+  .good-news_list {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    margin: 0 auto;
+    background: #f2f2f2;
+    &:after {
+      display: none;
+      content: " ";
+      background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
+    }
+  }
+  .good-news_item {
+    padding-top: 300px;
+    background: url(../img/iphone-screen-mobile@1x.png) no-repeat center top;
+    margin-top: 300px;
   }
 
   .advantages-comments {
@@ -131,7 +147,7 @@
     margin-left: 0;
   }
 
-  .news-wrapper,
+  .news-list_answer,
   .news-list_question {
     display: flex;
     font-size: 50px;

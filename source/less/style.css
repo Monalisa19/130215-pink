@@ -32,6 +32,7 @@ h2 {
   height: 70px;
 }
 .logo-top .menu-btn {
+  width: 320px;
   background: url(../img/icon-menu-burger.svg) no-repeat center;
   width: 52px;
   height: 70px;
@@ -41,13 +42,8 @@ h2 {
 .logo-top .menu-btn.open {
   background: url(../img/icon-menu-cross.svg) no-repeat center;
 }
-.main-nav_list {
-  padding: 0;
-  margin: 0;
-}
 .main-nav_item {
   width: 320px;
-  margin: 0;
   padding: 23px 0;
   list-style: none;
   border: 1px solid #485461;
@@ -59,6 +55,10 @@ h2 {
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
+}
+.main-nav_list {
+  padding: 0;
+  margin: 0;
 }
 @media (min-width: 660px) {
   .logo-top {
@@ -72,16 +72,14 @@ h2 {
     background: url(../img/icon-menu-burger.svg) no-repeat center;
     width: 52px;
     height: 70px;
-    margin-left: 511px;
+    margin-left: 340px;
     cursor: pointer;
   }
 }
 .main-nav_item {
   display: flex;
-  flex-direction: row;
-  width: 640px;
-  padding-left: 19px;
-  padding-right: 19px;
+  flex-direction: column;
+  text-align: center;
   border: 1px solid #485461;
 }
 .main-nav_item a {
@@ -211,6 +209,8 @@ h2 {
 }
 @media (min-width: 660px) {
   .news-wrapper {
+    position: relative;
+    left: 10px;
     width: 660px;
     display: flex;
     flex-direction: column;
@@ -236,17 +236,15 @@ h2 {
     padding: 15px 5% 40px 50%;
     text-align: left;
   }
-  .good-news_list {
-    height: 787px;
-  }
   .good-news_list:after {
     display: block;
     content: " ";
     background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
     background-size: 275px auto;
+    width: 660px;
     height: 478px;
-    position: relative;
-    bottom: 561px;
+    position: absolute;
+    top: 992px;
     left: -64px;
   }
 }
@@ -257,11 +255,26 @@ h2 {
     background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
     background-size: cover;
   }
-  .good-news_item {
+  .news-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    background: white;
+  }
+  .good-news_list {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    margin: 0 auto;
+    background: #f2f2f2;
+  }
+  .good-news_list:after {
+    display: none;
+    content: " ";
+    background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
+  }
+  .good-news_item {
+    padding-top: 300px;
+    background: url(../img/iphone-screen-mobile@1x.png) no-repeat center top;
+    margin-top: 300px;
   }
   .advantages-comments {
     width: 240px;
@@ -276,7 +289,7 @@ h2 {
     line-height: 30px;
     margin-left: 0;
   }
-  .news-wrapper,
+  .news-list_answer,
   .news-list_question {
     display: flex;
     font-size: 50px;
@@ -348,7 +361,7 @@ h2 {
   .reviews-author,
   .reviews-author_name {
     width: 1200px;
-    min-height: 400px;
+    min-height: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -440,6 +453,7 @@ h2 {
     font-weight: 300;
   }
   .page‐footer_wrapper {
+    margin-top: 150px;
     width: 660px;
     display: flex;
     justify-content: center;
@@ -453,6 +467,10 @@ h2 {
   }
 }
 @media (min-width: 1200px) {
+  .page-footer {
+    position: relative;
+    top: 250px;
+  }
   .page‐footer_wrapper {
     width: 1200px;
     display: flex;
@@ -469,6 +487,9 @@ h2 {
   .page‐footer_contacts {
     display: flex;
     flex-direction: row;
+  }
+  .price__controls {
+    display: none;
   }
   .modal {
     height: 525;
@@ -645,112 +666,96 @@ textarea {
   margin: 24px;
   padding-left: 26px;
 }
-.price_header {
-  width: 320px;
-  text-transform: uppercase;
-  background-color: #283645;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
+.price__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #e5e5e5;
 }
-.price_header:before {
-  content: "ХИТ";
-  background: url(../img/bg-hit.svg) no-repeat;
-  width: 100px;
-  height: 30px;
-  font-size: 14px;
-  line-height: 30px;
-  position: absolute;
-  left: -8px;
-  transform: rotate(-43deg);
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #d22856;
-  color: #ffffff;
-}
-.price_title {
-  margin: 0;
+.price__package {
   font-size: 18px;
-  line-height: 25px;
   font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
 }
-.price_coast {
-  margin: 0;
+.price__name {
+  position: relative;
+  min-width: 275px;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  text-align: center;
+  border: 2px solid #e5e5e5;
+  background-color: #283645;
+  background-clip: padding-box;
+}
+.price__total {
+  display: block;
   font-size: 24px;
-  line-height: 35px;
   font-weight: 300;
+  line-height: 30px;
+  color: #fff;
 }
-.price_content-list {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-.price_item slider_price-item--active {
-  width: 320px;
-  text-align: left;
-  font-size: 14px;
+.price__option {
+  padding: 15px 0 14px 22px;
+  line-height: 30px;
   text-transform: uppercase;
-  min-height: 60px;
-  line-height: 60px;
-  color: #283645;
-  padding: 0px 20px;
-  border-top: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 92.9% center;
 }
-.price_content-item {
-  width: 320px;
-  padding: 0 20px;
-  text-align: left;
-  font-size: 14px;
-  text-transform: uppercase;
-  min-height: 60px;
-  line-height: 60px;
-  border-top: 2px solid #e5e5e5;
-  color: #283645;
-  background: url(../img/icon-yes.svg) 93% 50% no-repeat;
-}
-.price_content-item--not-included {
-  background: url(../img/icon-no.svg) 93% 50% no-repeat;
-}
-.price_item price_options {
+.price__controls {
+  margin-top: 32px;
+  text-align: center;
   display: none;
 }
-.price_item slider_price-item {
-  display: none;
-}
-.switch-elements {
-  width: 320px;
-  height: 100px;
-  background: #e5e5e5;
-}
-.switch {
-  padding: 36px 121px 0;
-  width: 77px;
-  height: 25px;
-}
-@media (min-width: 660px) {
-  .slider_price-wrap {
-    width: 660px;
-    display: flex;
-    flex-direction: row;
-  }
-  .price_item price_options {
+@media screen and (min-width: 320px) {
+  .price__controls {
     display: block;
   }
-  .price_item slider_price-item {
-    display: block;
+  .price__table {
+    position: relative;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #e5e5e5;
+  }
+  /*  .price__option--yes,
+  .price__name--anlim {
+    display: none;
+  }
+*/
+  .price__name--baze {
+    display: none;
+  }
+  .price__option--yes,
+  .price__option--no {
+    width: 320px;
+    overflow: hidden;
   }
 }
-@media (min-width: 1200px) {
-  .price_price-table {
-    width: 940px;
-    display: flex;
-    flex-direction: row;
+@media screen and (min-width: 660px) {
+  .price__table {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #e5e5e5;
   }
-  .price_item price_options {
-    display: block;
-  }
-  .price_item slider_price-item {
-    display: block;
+}
+@media screen and (min-width: 1200px) {
+  .price__table {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #e5e5e5;
   }
 }
 .research {
@@ -795,35 +800,32 @@ textarea {
     background-size: 250px auto;
   }
 }
-.slider {
-  position: relative;
-  width: 320px;
-  height: 60px;
-  text-align: center;
-}
-.slider-controls label {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin: 0 3px;
-  background: white;
-  border: 3px solid white;
-  vertical-align: top;
+.slider-controls__toggle {
+  width: 12px;
+  height: 12px;
+  margin-right: 9px;
+  padding: 0;
+  border: 3px solid #fff;
   border-radius: 50%;
+  background-color: rgba(40, 54, 69, 0.3);
   cursor: pointer;
+  outline: none;
+  transition: all 0.2s linear;
 }
-.slider-controls {
-  position: absolute;
-  bottom: 95px;
-  left: 50%;
-  width: 200px;
-  height: 10px;
-  margin-left: -100px;
-  text-align: center;
-  z-index: 1000;
+.slider-controls__toggle--price {
+  border-color: #f2f2f2;
 }
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background: #c1c1c1;
+.price__slider {
+  overflow: hidden;
+}
+.price__name--extend {
+  display: table-cell;
+  background-color: transparent;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+@media screen and (min-width: 320px) {
+  .price__controls {
+    display: block;
+  }
 }
