@@ -70,7 +70,30 @@
     overflow: hidden;
   }
 }
+.price__name--extend {
+  display: none;
+}
 @media screen and (min-width: 660px) {
+  .price__name {
+    position: relative;
+    min-width: 170px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: 2px solid #e5e5e5;
+    background-color: #283645;
+    background-clip: padding-box;
+  }
+  .price__option {
+    padding: 15px 0 14px 22px;
+    line-height: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 92.9% center;
+  }
   .price__table {
     position: relative;
     left: 50%;

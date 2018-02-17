@@ -7,18 +7,21 @@
     width: 75px;
     height: 70px;
   }
-  .menu-btn {
-    width: 320px;
-    background: url(../img/icon-menu-burger.svg) no-repeat center;
-    width: 52px;
-    height: 70px;
-    margin-left: 150px;
-    cursor: pointer;
-    &.open {
-      background: url(../img/icon-menu-cross.svg) no-repeat center;
-    }
+}
+
+.menu-btn {
+  width: 320px;
+  background: url(../img/icon-menu-burger.svg) no-repeat center;
+  width: 52px;
+  height: 70px;
+  margin-left: 150px;
+  cursor: pointer;
+  &.open {
+    background: url(../img/icon-menu-cross.svg) no-repeat center;
   }
 }
+
+
 
 .main-nav_item {
   width: 320px;
@@ -32,7 +35,7 @@
 .main-nav_item a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: @FontSizeadvantagescomments;
   text-transform: uppercase;
 }
 
@@ -46,7 +49,7 @@
   .logo-top {
     display: flex;
     flex-direction: row;
-    width: 640px;
+    width: 620px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -55,22 +58,25 @@
     background: url(../img/icon-menu-burger.svg) no-repeat center;
     width: 52px;
     height: 70px;
-    margin-left: 340px;
+    margin-left: 480px;
     cursor: pointer;
+  }
+
+  .main-nav_item {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #485461;
+    a {
+      color: @fontColor;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 }
 
-.main-nav_item {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border: 1px solid #485461;
-  a {
-    color: @fontColor;
-    text-align: center;
-    margin: 0 auto;
-  }
-}
+
 
 @media (min-width: 1200px) {
   .main-nav {
