@@ -7,6 +7,12 @@
   text-align: center;
 }
 
+.device {
+  width: 320px;
+  height: 340px;
+  background-color: #e5e5e5;
+}
+
 .competition {
   color: @fontColor;
   font-size: @FontSizenewslist;
@@ -27,4 +33,234 @@
   padding: 18px;
   text-align: center;
   line-height: 2;
+}
+  .form-filling {
+    display: none;
+  }
+
+@media screen and (min-width: 660px) {
+  .logo-top {
+    display: flex;
+    flex-direction: row;
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .menu-btn {
+    background: url(../img/icon-menu-burger.svg) no-repeat center;
+    width: 52px;
+    height: 70px;
+    margin-left: 480px;
+    cursor: pointer;
+  }
+
+  .main-nav_item {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #485461;
+    a {
+      color: @fontColor;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .journey-with_pink {
+    width: 660px;
+    height: 330px;
+  //  background: no-repeat;
+    .competition {
+      font-size: 50px;
+      padding: 50px;
+    }
+  }
+
+  .travel-story {
+    width: 660px;
+  }
+
+  .history-win {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    .bonus-card {
+      margin: 0 auto;
+      font-size: 18px;
+      padding: 50px 50px 0;
+    }
+  }
+
+  .form-filling {
+    display: block;
+    font-size: 18px;
+    margin: 0 auto 50px;
+  }
+
+  .device {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1180px;
+    background: none;
+  }
+
+  .personal-data {
+    width: 660px;
+    position: absolute;
+    top: 1545px;
+  }
+
+  .subscribe-list {
+    width: 660px;
+    position: absolute;
+    top: 1833px;
+  }
+
+  .service-record {
+    position: absolute;
+    top: 1790px;
+  }
+
+  .post {
+    width: 660px;
+    position: absolute;
+    top: 2258px;
+    display: flex;
+    flex-direction: column;
+    .fuatured-post {
+      width: 660px;
+      text-align: center;
+    }
+
+    .comment {
+      width: 660px;
+      textarea {
+        width: 500px;
+        height: 190px;
+        padding: 50px 60px;
+        border: 1px solid grey;
+      }
+    }
+  }
+
+  .featured-post {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .footer-page_form {
+    position: absolute;
+    top: 2733px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 40px;
+    width: 580px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    width: 1200px;
+    height: 100px;
+    background: rgba(0,0,0,.3);
+  }
+
+  .main-nav_item {
+    border: none;
+  }
+  .journey-with_pink {
+    width: 1200px;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+    height: 400px;
+    background-size: cover;
+    .competition {
+      padding: 60px 120px;
+    }
+  }
+
+  .travel-story {
+    width: 1200px;
+  }
+
+  .history-win {
+    width: 820px;
+    margin: 0 auto;
+  }
+
+  .device {
+    position: absolute;
+    top: 1042px;
+    right: 130px;
+    background: none;
+  }
+
+  .card-traveler {
+    width: 500px;
+    margin-left: 80px;
+  }
+
+  .personal-data {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .field {
+    position: relative;
+    bottom: -1260px;
+    left: 500px;
+  }
+
+  .subscribe-list {
+    width: 800px;
+    height: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 60px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .service-record {
+    width: 1200px;
+  }
+
+  .post {
+    width: 1200px;
+    position: relative;
+    top: 60px;
+  }
+
+  .comment {
+    width: 1200px;
+    padding: 0;
+    margin: 0;
+    textarea {
+      width: 820px;
+      height: 128px;
+      margin-left: 128px;
+      margin-right: 190px;
+    }
+  }
+
+  .field {
+    position: absolute;
+    top: 2422px;
+    left: 831px;
+  }
+  .submint-send {
+    margin-bottom: 50px;
+  }
+
+  .footer-page_form {
+    position: static;
+    bottom: 50px;
+    width: 960px;
+    margin: 50px auto 0;
+  }
 }

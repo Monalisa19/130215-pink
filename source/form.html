@@ -5,12 +5,16 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style type="text/css">
+    .form-filing {
+    }
+  </style>
 </head>
   <header class="page-header">
     <nav class="main-nav">
       <div class="logo-top">
         <a class="logo" href="index.html"></a>
-        <a class="menu-btn"></a>
+        <span class="menu-btn"></span>
       </div>
       <ul class="main-nav_list">
         <li class="main-nav_item">
@@ -35,24 +39,24 @@
     <div class="history-win">
       <p class="bonus-card">Поделитесь своей историей и получите шанс выиграть ценный приз—1000
         миль на вашу бонусную карту!</p>
+      <p class="form-filling">Пожалуйста, заполните форму ниже:</p>
     </div>
     <div class="card-traveler">
       <form action="https://echo.htmlacademy.ru/" method="post">
         <div class="information">
-          <label for="field-surname">Фамилия:</label><br>
+          <label for="field-surname">Фамилия:</label>
           <input type="text" name="surname" id="field-surname" required value="Укажите фамилию *">
         </div>
         <div class="information">
-          <label for="field-name">Имя:</label><br>
+          <label for="field-name">Имя:</label>
           <input type="text" name="name" id="field-name" required value="Ведите ваше имя *">
         </div>
         <div class="information">
-          <label for="field-patronymic">Отчество:</label><br>
+          <label for="field-patronymic">Отчество:</label>
           <input type="text" name="patronymic" id="field-patronymic" value="Ну и отчество тоже">
         </div>
     </div>
   </div>
-  <div class="crazy-journey">
     <div class="service-record">
       <p class="record">Ваши безбашенные достижения в путешествии</p>
     </div>
@@ -82,7 +86,6 @@
         <label for="subscribe-field_five">Разгромил отель</label>
       </div>
     </div>
-  </div>
   <div class="personal-data">
     <div class="setting">
       <label for="tel">Номер телефона</label>
@@ -122,25 +125,15 @@
   </div>
 </form>
 <footer class="footer-page_form">
-  <div class="footer-page_logo">
-    <img src="#">
+  <div class="footer-page_logo"></div>
+  <div class="social-links">
+    <a class="social-links__item social-links__item--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+    <a class="social-links__item social-links__item--facebook" href="https://facebook.com" target="_blank">Facebook</a>
+    <a class="social-links__item social-links__item--youtube" href="https://youtube.com" target="_blank">Youtube</a>
   </div>
-  <div class="footer-icons">
-    <ul class="footer-page_social">
-      <li class="social-links__item">
-        <a class="social‐links__item‐link‐‐twitter">Twitter</a>
-      </li>
-      <li class="social‐links__item">
-        <a class="social‐links__item‐link‐‐facebook">Facebook</a>
-      </li>
-      <li class="social‐links__item">
-        <a class="social‐links__item‐link‐‐youtube">Youtube</a>
-      </li>
-    </ul>
-  </div>
-  <div class="copyright">
-    <p class="page‐footer__copyright">Разработано:</p>
-    <a class="btn page‐footer__copyright‐link" href="https://htmlacademy.ru"></a>
+  <div class="page‐footer__copyright">
+    <p class="page‐footer__copyright‐text">Разработано:</p>
+    <a class="page‐footer__copyright‐link" href="https://htmlacademy.ru"target="_blank"></a>
   </div>
 </footer>
 </body>

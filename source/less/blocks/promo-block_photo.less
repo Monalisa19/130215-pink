@@ -9,13 +9,16 @@
   font-size: @FontSizeadvantagescomments;
 }
 
-.promo-header_title {
+.promo-header {
   width: 320px;
   height: 230px;
   background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
-  text-align: center;
-  font-size: @FontSizenewslist;
-  color: @fontColor;
+  .promo-header_title {
+    margin: 0;
+    text-align: center;
+    font-size: @FontSizenewslist;
+    color: @fontColor;
+  }
 }
 
 .photos {
@@ -54,6 +57,28 @@
 }
 
 @media screen and (min-width: 660px) {
+  .promo-header {
+    width: 660px;
+    height: 440px;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+    background-size: cover;
+    .promo-header_title {
+      padding-top: 80px;
+      margin: 0 auto;
+      font-size: 40px;
+      width: 300px;
+    }
+  }
+
+  .promo-block {
+    width: 660px;
+    .promo-block_description {
+      width: 435px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+  }
+
   .photos {
     width: 660px;
     display: flex;
@@ -157,5 +182,107 @@
     background-image: url(../img/logo-htmlacademy.svg);
   }
 }
+
+@media screen and (min-width: 1200px) {
+
+  .menu-btn {
+    display: none;
+  }
+
+  .logo-top {
+    width: 100%;
+    padding: 0 50px;
+    background: none;
+  }
+
+  .promo-header {
+    width: 1200px;
+    background: none;
+  }
+
+  .main-nav_item {
+    border: none;
+    background: none;
+  }
+
+  .main-nav_link {
+    text-transform: capitalize;
+    font-size: 18px;
+  }
+
+  .main-nav_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: -70px;
+  }
+
+  .promo-block {
+    width: 1200px;
+    .promo-block_description {
+      width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .photos {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos-name_person {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    .panorama-photo {
+      width: 1200px;
+      height: 500px;
+    }
+  }
+
+  .name-comment_icon {
+    width: 940px;
+    margin: 0 auto;
+  }
+/*  .photos_item {
+    margin: 0;
+  }
+*/
+  .photos-block {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 110px;
+    margin-right: 94px;
+  //  margin: 0 auto;
+  }
+  .promo {
+    width: 940px;
+    margin: 0 auto;
+    .road {
+      padding: 50px 80px;
+    }
+  }
+
+  .blockquote_description {
+    width: 940px;
+    margin: 0 auto;
+    .paragraph {
+      width: 230px;
+      margin: 0 auto 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  .footer-page_form {
+    width: 960px;
+    padding: 70px 118px;
+  }
+}
+
 
 
